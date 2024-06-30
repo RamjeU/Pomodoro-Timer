@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="pomodoro">Pomodoro</button>
+            <button id="shortBreak">Short Break</button>
+            <button id="longBreak">Long Break</button>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="tasks">
+            <h2>Task List</h2>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addTask">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+        <div class="progress">
+            <h2>Progress</h2>
+            <p>Completed Pomodoros: <span id="completedPomodoros">0</span></p>
+        </div>
+        <div class="settings">
+            <h2>Settings</h2>
+            <label for="customPomodoro">Pomodoro Duration (minutes):</label>
+            <input type="number" id="customPomodoro" value="25">
+            <label for="customShortBreak">Short Break Duration (minutes):</label>
+            <input type="number" id="customShortBreak" value="5">
+            <label for="customLongBreak">Long Break Duration (minutes):</label>
+            <input type="number" id="customLongBreak" value="20">
+            <button id="saveSettings">Save Settings</button>
+        </div>
+        <div class="about">
+            <h2>About</h2>
+            <p>This Pomodoro Timer helps you manage your time efficiently by breaking your work into 25-minute intervals followed by short breaks.</p>
+        </div>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+    </div>
+    <audio id="notificationSound" src="notification.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
