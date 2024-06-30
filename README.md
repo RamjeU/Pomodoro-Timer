@@ -11,6 +11,8 @@ Progress Tracking: Visual progress bar to track completed Pomodoro sessions.
 Dark Mode: Toggle between light and dark themes for a comfortable user experience.
 Audio Notifications: Alerts you when the timer ends.
 Settings Section: Easy access to customize your timer settings.
+
+
 Technologies Used
 HTML5: For structuring the web page.
 CSS3: For styling the application and creating a responsive design.
